@@ -1,0 +1,87 @@
+EJERCICIO 1
+grep -E -i --color x[1-9] grepdata.txt
+
+714-555-7870 X7310
+714-555-7870 x7309
+714-555-5350 x2134
+
+EJERCICIO 2
+grep -E '^[[:digit:]]{3}* '  grepdata.txt
+401 S. Palm St.
+440 Briercrest Ave.
+
+EJERCICIO 3
+Sep. 17, 2013
+Sep. 24, 2013
+Oct. 1, 2013
+Oct. 8, 2013
+Oct. 15, 2013
+Nov. 12, 2013
+
+EJERCICIO 4
+grep -E -i --color "[a][[:lower:]][a]" grepdata.txt
+Anaheim, CA 92807-1281
+Carl Hohl (aka Krazy Rabbit)
+
+grep -E -i --color "[e][[:lower:]][e]" grepdata.txt
+Steve Marshal
+Steve Lawson
+Rosemead High School
+Rosemead, CA 91770
+
+grep -E -i --color "[i][[:lower:]][i]" grepdata.txt
+Sonora High School
+
+EJERCICIO 5
+grep -Ev "^S" grepdata.txt
+Esperanza High School
+1830 N. Kellog Dr.
+Anaheim, CA 92807-1281
+714-555-7870 X7310
+aztecwrestling@example.com
+Brian Fortenbaugh
+714-555-7870 x7309
+
+401 S. Palm St.
+La Habra, CA 90631
+Carl Hohl (aka Krazy Rabbit)
+562-555-9800
+
+Oct. 1, 2013
+Lakewood High School
+440 Briercrest Ave.
+Lakewood, CA 90713-2013
+Andy Miramontes
+562-555-1281
+
+Oct. 8, 2013
+North Torrance High School
+2013 W. 182nd
+Torrance, CA 90504
+Don Henderson
+310-555-4412
+
+Oct. 15, 2013
+El Dorado High School
+1651 N. Valencia Ave.
+Placentia, CA 90631
+714-555-5350 x2134
+Lawsonhawk@example.com
+
+Nov. 12, 2013
+Rosemead High School
+9063 E. Sepulveda Dr.
+Rosemead, CA 91770
+Daren de Heras
+daren103@example.com
+
+EJERCICIO 6
+grep -E @ grepdata.txt
+aztecwrestling@example.com
+Lawsonhawk@example.com
+daren103@example.com
+
+
+
+
+
